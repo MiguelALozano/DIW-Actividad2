@@ -1,0 +1,230 @@
+:root {
+    --color-principal: rgb(0,71,81);
+    --color-secundario: rgb(200, 200, 200);
+    --color-yellow: rgba(243, 192, 40);
+    --color-white: rgb(255, 255, 255);
+    --color-box-shadow: rgba(0, 0, 0, 0.2);
+    --color-hover: rgba(34, 57, 120, 0.94);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-secundario);
+}
+
+header {
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: var(--color-principal);
+    color: var(--color-white);
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight:400;
+    color: var(--color-white);
+}
+
+h3 {
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a {
+    margin: 5px auto;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: var(--color-yellow);
+}
+
+a {
+    margin: 5px auto;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: var(--color-yellow);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.titulo {
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    color: var(--color-principal);
+}
+
+hr {
+    height: 0.4rem;
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: var(--color-principal);
+}
+
+.linea {
+    width: 50%;
+    height: 3px;
+    margin: 1% auto;
+    background-color: var(--color-principal);
+}
+
+.boton{
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: var(--color-principal);
+    color: var(--color-white)
+}
+
+.contenedorBoton {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: flex;
+}
+
+.wrap  { 
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+}
+
+.avatarZ{
+    position:relative; 
+    display:block;
+    margin: 50px auto 0px auto;
+    width: 300px;
+    border-radius: 50%;
+    border: solid;
+    border-color: var(--color-white);
+    box-shadow: 0px 0px 10px 5px var(--color-box-shadow);
+    z-index: 2;
+}
+
+.zindex div svg {
+    position:relative;
+    display: block;
+    margin: -100px auto 0px auto;
+    width: 400px;
+    border-radius: 2%;
+    fill: var(--color-white);
+    stroke-width:0px;
+    stroke: var(--color-white);
+    box-shadow: 0px 2px 10px 5px var(--color-box-shadow);
+    z-index:1;
+}
+
+.conjuntoPastillaZ{
+    position: relative;
+    display:block;
+    margin: -150px auto 0px auto;
+    width: 300px;
+    height: 150px;
+    z-index: 3;
+}
+
+.nombre{
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-top: 0;
+}
+
+.profesion{
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-top: 1%;
+}
+.redesSociales{
+    position: relative;
+    width:65%;
+    margin: 2% auto 2% auto; 
+}
+
+.redes{
+    position: relative;
+    display: inline-block;
+    width: 10%;
+    margin: 2% auto 2% auto;
+    color: var(--color-box-principal);
+}
+
+.imgRedes{
+    position: relative;
+    width: 75%;
+    margin: 2% auto 2% auto;
+}
+.extra{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1rem;
+    border: 0px solid;
+    margin: 2% auto 0% auto;
+}
+
+/* =============== FOOTER ==========================*/
+footer {
+    position: relative;
+    display: inline-flex;
+    width:100%;
+    height: 10%;
+    margin: 50px auto 0px auto;
+    background-color: var(--color-principal);
+}
+
+footer div{
+    margin: auto;
+    font-size: 0.6rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-white);
+    padding: 1%;
+}
+
+.imgFooter{
+    width: 0.8rem;
+    margin-left: 0.4rem;
+    margin-right: 0.3rem;
+}
+
+footer div a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+footer div a:hover {
+    text-decoration: none;
+    color: var(--color-yellow);
+}
